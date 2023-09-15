@@ -6,6 +6,10 @@ body {
   background: transparent;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* body {
     top: 0 !important;
 }
@@ -368,6 +372,9 @@ section .container {
   }
   section.section-show {
     top: 80px;
+  }
+  .third {
+    margin-top: 40px;
   }
 }
 
@@ -909,6 +916,8 @@ section .container {
 .contact .info-box {
   color: #444444;
   padding: 20px;
+  height: 130px;
+
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
 }
@@ -918,13 +927,13 @@ section .container {
   color: #18d26e;
   border-radius: 50%;
 
-  padding: 14px;
+  padding: 8px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
 }
 
 .contact .info-box i {
-  font-size: 24px;
+  font-size: 20px;
   color: #18d26e;
   border-radius: 50%;
 
