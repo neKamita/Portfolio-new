@@ -169,3 +169,22 @@
     items: 1,
   });
 })(jQuery);
+
+let shareBtn = document.getElementById("shareBtn");
+let links = document.getElementsByClassName("link");
+
+shareBtn.addEventListener("click", () => {
+  shareBtn.classList.toggle("open");
+  setTimeout(() => {
+    for (let link of links) {
+      link.classList.toggle("active");
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        // Дополнительные действия по переходу по ссылке после 0.5 секунды
+        setTimeout(() => {
+          window.location.href = link.getAttribute("href");
+        }, 500);
+      });
+    }
+  }, 500);
+});

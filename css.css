@@ -1110,6 +1110,15 @@ section .container {
   }
 }
 
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
 .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
