@@ -38,6 +38,10 @@
       crossorigin="anonymous"
       href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9yYWphYmJveS1yZXN1bWUubmV0bGlmeS5hcHAv"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/fc41554a9c.js"
       crossorigin="anonymous"
@@ -46,6 +50,12 @@
 
   <body>
     <wrapper class="wrapper">
+      <div class="preloader">
+        <div class="logo">
+          <h1 class="logoo-text pt-3">Tulkinov</h1>
+          <h1 class="logoo-text2 pt-3">Bekhruz</h1>
+        </div>
+      </div>
       <header id="header" class="header-tops">
         <div class="container">
           <h1><a href="index.html">Tulkinov Bekhruz</a></h1>
@@ -813,5 +823,22 @@
     <!-- <script src="./assets/js/google-translate.js"></script> -->
     <!-- <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script> -->
     <script src="./js.js"></script>
+    <script>
+      $(".gallery-list").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: {
+          enabled: true,
+        },
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const preloader = document.querySelector(".preloader");
+        setTimeout(function () {
+          preloader.classList.add("hide");
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
